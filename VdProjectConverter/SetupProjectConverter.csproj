@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F16F990D-21F4-4854-B6D8-47BC41B43B50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SetupProjectConverter</RootNamespace>
+    <AssemblyName>SetupProjectConverter</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\AiProject\AiFile.cs">
+      <Link>AiProject\AiFile.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\AiProject\AiFolder.cs">
+      <Link>AiProject\AiFolder.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\AiProject\AiProduct.cs">
+      <Link>AiProject\AiProduct.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\AiProject\AiProject.cs">
+      <Link>AiProject\AiProject.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\AiProject\AiRegKey.cs">
+      <Link>AiProject\AiRegKey.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\AiProject\AiShortcut.cs">
+      <Link>AiProject\AiShortcut.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\AsynchronousDialog.cs">
+      <Link>AsynchronousDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\BaseFile.cs">
+      <Link>BaseProject\BaseFile.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\BaseFolder.cs">
+      <Link>BaseProject\BaseFolder.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\BaseOtherType.cs">
+      <Link>BaseProject\BaseOtherType.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\BaseProduct.cs">
+      <Link>BaseProject\BaseProduct.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\BaseProject.cs">
+      <Link>BaseProject\BaseProject.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\BaseRegKey.cs">
+      <Link>BaseProject\BaseRegKey.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\BaseShortcut.cs">
+      <Link>BaseProject\BaseShortcut.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\InnoProject.cs">
+      <Link>BaseProject\InnoProject.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\NSISProject.cs">
+      <Link>BaseProject\NSISProject.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\BaseProject\PropertyReference.cs">
+      <Link>BaseProject\PropertyReference.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\DialogUpdater.cs">
+      <Link>DialogUpdater.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\IsleProject\IsleFile.cs">
+      <Link>IsleProject\IsleFile.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\IsleProject\IsleFolder.cs">
+      <Link>IsleProject\IsleFolder.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\IsleProject\IsleProduct.cs">
+      <Link>IsleProject\IsleProduct.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\IsleProject\IsleProject.cs">
+      <Link>IsleProject\IsleProject.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\IsleProject\IsleRegKey.cs">
+      <Link>IsleProject\IsleRegKey.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\IsleProject\IsleShortcut.cs">
+      <Link>IsleProject\IsleShortcut.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\ProgressDialog.cs">
+      <Link>ProgressDialog.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\ProgressDialog.designer.cs">
+      <Link>ProgressDialog.designer.cs</Link>
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\VdProject\VdFile.cs">
+      <Link>VdProject\VdFile.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\VdProject\VdFolder.cs">
+      <Link>VdProject\VdFolder.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\VdProject\VdOtherType.cs">
+      <Link>VdProject\VdOtherType.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\VdProject\VdProduct.cs">
+      <Link>VdProject\VdProduct.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\VdProject\VdProject.cs">
+      <Link>VdProject\VdProject.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\VdProject\VdRegKey.cs">
+      <Link>VdProject\VdRegKey.cs</Link>
+    </Compile>
+    <Compile Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\VdProject\VdShortcut.cs">
+      <Link>VdProject\VdShortcut.cs</Link>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SetupProjectConverterApp.cs" />
+    <EmbeddedResource Include="..\VisualInstaller\VisualInstaller\VdProjectConverter\ProgressDialog.resx">
+      <Link>ProgressDialog.resx</Link>
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Compilers\InnoSetupCompiler\InnoSetupCompiler.csproj">
+      <Project>{6C563ECA-9260-4DBF-B0B0-AA820B71610D}</Project>
+      <Name>InnoSetupCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Compilers\NSISCompiler\NSISCompiler.csproj">
+      <Project>{3E2FA637-BE7F-48FE-BF1D-10F50C2AB97E}</Project>
+      <Name>NSISCompiler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nsis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inno-setup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Resources\advanced.png" />
+    <None Include="Resources\isle.png" />
+    <None Include="Resources\vd-project.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
